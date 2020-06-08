@@ -23,7 +23,7 @@ func NewCommand() *cobra.Command {
 		},
 	}
 
-	c.Flags().StringVarP(&device.ip, "ip", "i", "127.0.0.1", "tcp listening ip address of the modbus server")
+	c.Flags().StringVarP(&device.ip, "ip", "i", "0.0.0.0", "tcp listening ip address of the modbus server")
 	c.Flags().IntVarP(&device.port, "port", "p", 5020, "tcp listening port of the modbus server")
 
 	return c
